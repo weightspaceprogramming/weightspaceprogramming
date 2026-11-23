@@ -1,0 +1,30 @@
+{
+  "neuron": {
+    "title": "Change a neuron",
+    "code": "from weightspaceprogramming import neuron\n\n# y = 2*x - 1. Change the weight or bias, then run again.\nx = [[0], [1], [2], [3]]\nprint(neuron(x, weights=[2], bias=-1).tolist())\n"
+  },
+  "boolean": {
+    "title": "Program AND and OR",
+    "code": "from weightspaceprogramming import binary_inputs, neuron\n\nx = binary_inputs(2)\nprint(\"inputs:\", x.tolist())\nprint(\"AND:\", neuron(x, [1, 1], bias=-1.5, activation=\"step\").tolist())\nprint(\"OR:\", neuron(x, [1, 1], bias=-0.5, activation=\"step\").tolist())\n"
+  },
+  "xor": {
+    "title": "Write a two-layer XOR network",
+    "code": "from weightspaceprogramming import binary_inputs, mlp\n\n# Hidden neurons compute OR and AND. The output computes OR - 2*AND.\nweights = [[[1, 1], [1, 1]], [[1], [-2]]]\nbiases = [[-0.5, -1.5], [-0.5]]\nx = binary_inputs(2)\ny = mlp(x, weights, biases, activation=\"step\", output_activation=\"step\")\nprint(\"XOR:\", y[:, 0].tolist())\n"
+  },
+  "compile": {
+    "title": "Construct weights, then execute",
+    "code": "from weightspaceprogramming import compile_affine, mlp\n\n# Construct the parameters for f(x) = 3*x + 2 once.\nw, b = compile_affine(scale=3, shift=2)\nprint(\"weights:\", w.tolist(), \"bias:\", b.tolist())\n# Reuse those parameters on new inputs.\nprint(\"outputs:\", mlp([[0], [1], [4]], [w], [b])[:, 0].tolist())\n"
+  },
+  "generator": {
+    "title": "Learn a descriptor-to-weights map",
+    "code": "import numpy as np\nfrom weightspaceprogramming import fit_linear_generator, neuron\n\n# Each numerical descriptor is [slope, intercept]. Its target is a neuron program.\ndescriptors = np.array([[-2, -1], [-1, 1], [1, -1], [2, 1]], dtype=float)\nprograms = np.column_stack([2 * descriptors[:, 0], 0.5 * descriptors[:, 1] - 1])\ngenerator = fit_linear_generator(descriptors, programs)\n# Generate a new program from a descriptor absent from the training examples.\nprogram = generator.generate([3, 2])\nprint(\"generated [weight, bias]:\", (np.round(program, 6) + 0.0).tolist())\nprint(\"outputs:\", (np.round(neuron([[0], [1], [2]], program[:1], program[1]), 6) + 0.0).tolist())\n"
+  },
+  "lora": {
+    "title": "Change a function with a rank-one update",
+    "code": "import numpy as np\nfrom weightspaceprogramming import apply_lora\n\n# Row-vector convention: output = input @ W; update = A @ B.\nw = np.eye(2)\na = np.array([[1.0], [0.0]])\nb = np.array([[0.0, 2.0]])\nedited = apply_lora(w, a, b)\nx = np.array([[3.0, 4.0]])\nprint(\"base output:\", (x @ w).tolist())\nprint(\"edited output:\", (x @ edited).tolist())\nprint(\"update rank:\", int(np.linalg.matrix_rank(edited - w)))\nprint(\"base unchanged:\", bool(np.array_equal(w, np.eye(2))))\n"
+  },
+  "norms": {
+    "title": "Read weights and permute hidden units",
+    "code": "import numpy as np\nfrom weightspaceprogramming import channel_norms, mlp, permute_hidden\n\n# A synthetic 1x2 grid with one input channel and two hidden units.\nw1 = np.array([[3.0, 4.0], [0.0, 2.0]])\nw2 = np.array([[1.0], [-2.0]])\nweights, biases = [w1, w2], [np.array([0.1, -0.2]), np.array([0.3])]\nmaps = channel_norms(w1, (1, 2, 1))\nprint(\"channel norms:\", maps.tolist())\nreordered, reordered_biases = permute_hidden(weights, biases, [1, 0])\nx = np.array([[0.0, 0.0], [1.0, 0.0], [0.0, 1.0], [1.0, 1.0]])\nprint(\"same norm maps:\", bool(np.allclose(maps, channel_norms(reordered[0], (1, 2, 1)))))\nprint(\"same outputs:\", bool(np.allclose(mlp(x, weights, biases), mlp(x, reordered, reordered_biases))))\n"
+  }
+}

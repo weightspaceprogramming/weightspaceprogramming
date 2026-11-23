@@ -1,0 +1,4 @@
+global-exclude *
+include pyproject.toml MANIFEST.in README.md SOURCES.md LICENSE
+recursive-include src/weightspaceprogramming *.py lessons.json
+include tests/test_toolkit.py

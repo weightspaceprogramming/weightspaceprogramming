@@ -5,7 +5,7 @@ Learn weight-space programming by changing small networks and seeing what they c
 ## Install
 
 ```bash
-python -m pip install --pre weightspaceprogramming
+python -m pip install weightspaceprogramming
 weightspaceprogramming lesson list
 weightspaceprogramming lesson lora
 ```
@@ -89,7 +89,7 @@ NPZ files load with pickle disabled. The kernel must be a finite real matrix wit
 Add plotting when needed:
 
 ```bash
-python -m pip install --pre 'weightspaceprogramming[plot]'
+python -m pip install 'weightspaceprogramming[plot]'
 weightspaceprogramming inspect network.npz \
   --key actor/dense1/kernel --shape 10 10 5 --plot heatmaps.svg
 ```

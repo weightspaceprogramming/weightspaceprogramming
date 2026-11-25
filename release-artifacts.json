@@ -1,15 +1,15 @@
 {
-  "version": "0.1.0.dev1",
+  "version": "0.1.0",
   "archives": {
-    "weightspaceprogramming-0.1.0.dev1-py3-none-any.whl": {
-      "weightspaceprogramming-0.1.0.dev1.dist-info/METADATA": "8692d19cbe1b53391d7f1e7e60ba2c2e2edea8eb9d4d0ea4196c4ce49c373406",
-      "weightspaceprogramming-0.1.0.dev1.dist-info/RECORD": "ea51d8bfaaada5d5149e85649b47c313131ccc55765c9e31af5501d54150daa6",
-      "weightspaceprogramming-0.1.0.dev1.dist-info/WHEEL": "c17c53cdc1039e3ad3c056232cf72c5bfeff5e286e7c1c26a6205e8973411840",
-      "weightspaceprogramming-0.1.0.dev1.dist-info/entry_points.txt": "7c3a4870f50ddaa38930e5623cf25a1499382f91f219923114a4b171121a5325",
-      "weightspaceprogramming-0.1.0.dev1.dist-info/licenses/LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
-      "weightspaceprogramming-0.1.0.dev1.dist-info/licenses/SOURCES.md": "735d3230cb6a0513f9c20ddabb5e12b3feadf1ce7d55418f8713afb1e28a1ca6",
-      "weightspaceprogramming-0.1.0.dev1.dist-info/top_level.txt": "378e4ec9ee1fe0eb70369e0fac74f06ecfd01de4f2e1bf32e778707a402a26c4",
-      "weightspaceprogramming/__init__.py": "545f1729c915e4760e3a928fcd3d25545b9657be74e66d72e7e22902ebd190f2",
+    "weightspaceprogramming-0.1.0-py3-none-any.whl": {
+      "weightspaceprogramming-0.1.0.dist-info/METADATA": "cbb7c57a892c81defd54e03da51517e5f3e4f8c18a0a22f9125ffa4b438d946f",
+      "weightspaceprogramming-0.1.0.dist-info/RECORD": "e746b42968166c7920931b7710046ee52b2c7c0e6a915b25e5caf1ecf151d3ce",
+      "weightspaceprogramming-0.1.0.dist-info/WHEEL": "c17c53cdc1039e3ad3c056232cf72c5bfeff5e286e7c1c26a6205e8973411840",
+      "weightspaceprogramming-0.1.0.dist-info/entry_points.txt": "7c3a4870f50ddaa38930e5623cf25a1499382f91f219923114a4b171121a5325",
+      "weightspaceprogramming-0.1.0.dist-info/licenses/LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "weightspaceprogramming-0.1.0.dist-info/licenses/SOURCES.md": "735d3230cb6a0513f9c20ddabb5e12b3feadf1ce7d55418f8713afb1e28a1ca6",
+      "weightspaceprogramming-0.1.0.dist-info/top_level.txt": "378e4ec9ee1fe0eb70369e0fac74f06ecfd01de4f2e1bf32e778707a402a26c4",
+      "weightspaceprogramming/__init__.py": "564da7aa373418fb648a5a118f67f888827b86af30a8a2ef2edaaebc29135015",
       "weightspaceprogramming/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
       "weightspaceprogramming/cli.py": "7e281e6e92fedec535cd834eba7098761c1655574fb6b0e75a587ecdecb36ad5",
       "weightspaceprogramming/core.py": "e24892287da928a0ff5bf10a48de927b3c7f64f8179069c306b81c80fdd3c6ad",
@@ -17,23 +17,23 @@
       "weightspaceprogramming/lessons.json": "5adf34196c677afc47f470858ffcb96e20c6e16f3148e698443df491ed42b0e4",
       "weightspaceprogramming/lessons.py": "736be9378cb7bc9855b44269beaa7d9954b0d60c19bb568fa65fdad9dfaf5ef2"
     },
-    "weightspaceprogramming-0.1.0.dev1.tar.gz": {
-      "weightspaceprogramming-0.1.0.dev1/LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
-      "weightspaceprogramming-0.1.0.dev1/MANIFEST.in": "97c286232ab929723f4f674dd1ba9ad2b0388d017b729a3525df0dea0fc498c4",
-      "weightspaceprogramming-0.1.0.dev1/PKG-INFO": "8692d19cbe1b53391d7f1e7e60ba2c2e2edea8eb9d4d0ea4196c4ce49c373406",
-      "weightspaceprogramming-0.1.0.dev1/README.md": "4b4f471aca222cf96b07d149f5c1f000ea0b26492cddef8774f6dbb1c95ee4d7",
-      "weightspaceprogramming-0.1.0.dev1/SOURCES.md": "735d3230cb6a0513f9c20ddabb5e12b3feadf1ce7d55418f8713afb1e28a1ca6",
-      "weightspaceprogramming-0.1.0.dev1/pyproject.toml": "086b2ff18ecc651c00ced14fa0ebc78d293fc7fdce75958e89778fd010ae3a12",
-      "weightspaceprogramming-0.1.0.dev1/setup.cfg": "1c473cbaee8da5fc46e7f0158794af5cea4414c34a3cf3f180c2001f5e38bd3e",
-      "weightspaceprogramming-0.1.0.dev1/src/weightspaceprogramming.egg-info/SOURCES.txt": "177c5d474acf2085f78a35a7bd751663eeeebefbbb872afc4fecf124022999fd",
-      "weightspaceprogramming-0.1.0.dev1/src/weightspaceprogramming/__init__.py": "545f1729c915e4760e3a928fcd3d25545b9657be74e66d72e7e22902ebd190f2",
-      "weightspaceprogramming-0.1.0.dev1/src/weightspaceprogramming/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
-      "weightspaceprogramming-0.1.0.dev1/src/weightspaceprogramming/cli.py": "7e281e6e92fedec535cd834eba7098761c1655574fb6b0e75a587ecdecb36ad5",
-      "weightspaceprogramming-0.1.0.dev1/src/weightspaceprogramming/core.py": "e24892287da928a0ff5bf10a48de927b3c7f64f8179069c306b81c80fdd3c6ad",
-      "weightspaceprogramming-0.1.0.dev1/src/weightspaceprogramming/inspection.py": "925455117696e1621cf80686dcccf1a542cf7ca9c0e1dc87595968ac2598c330",
-      "weightspaceprogramming-0.1.0.dev1/src/weightspaceprogramming/lessons.json": "5adf34196c677afc47f470858ffcb96e20c6e16f3148e698443df491ed42b0e4",
-      "weightspaceprogramming-0.1.0.dev1/src/weightspaceprogramming/lessons.py": "736be9378cb7bc9855b44269beaa7d9954b0d60c19bb568fa65fdad9dfaf5ef2",
-      "weightspaceprogramming-0.1.0.dev1/tests/test_toolkit.py": "19a2bc07bd5e143932144c5108131bdbd106d51b4b15d5563d02fdab9cb899dd"
+    "weightspaceprogramming-0.1.0.tar.gz": {
+      "weightspaceprogramming-0.1.0/LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "weightspaceprogramming-0.1.0/MANIFEST.in": "97c286232ab929723f4f674dd1ba9ad2b0388d017b729a3525df0dea0fc498c4",
+      "weightspaceprogramming-0.1.0/PKG-INFO": "cbb7c57a892c81defd54e03da51517e5f3e4f8c18a0a22f9125ffa4b438d946f",
+      "weightspaceprogramming-0.1.0/README.md": "084057f17366a4afa0698b944fb5c4f2aa1d481247a2d3ddc1f7607e9b90ae68",
+      "weightspaceprogramming-0.1.0/SOURCES.md": "735d3230cb6a0513f9c20ddabb5e12b3feadf1ce7d55418f8713afb1e28a1ca6",
+      "weightspaceprogramming-0.1.0/pyproject.toml": "9442fccc15aec1bf03baa929d8f5cd22cc6b52e4b8f34788346655fef0d6b978",
+      "weightspaceprogramming-0.1.0/setup.cfg": "1c473cbaee8da5fc46e7f0158794af5cea4414c34a3cf3f180c2001f5e38bd3e",
+      "weightspaceprogramming-0.1.0/src/weightspaceprogramming.egg-info/SOURCES.txt": "177c5d474acf2085f78a35a7bd751663eeeebefbbb872afc4fecf124022999fd",
+      "weightspaceprogramming-0.1.0/src/weightspaceprogramming/__init__.py": "564da7aa373418fb648a5a118f67f888827b86af30a8a2ef2edaaebc29135015",
+      "weightspaceprogramming-0.1.0/src/weightspaceprogramming/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "weightspaceprogramming-0.1.0/src/weightspaceprogramming/cli.py": "7e281e6e92fedec535cd834eba7098761c1655574fb6b0e75a587ecdecb36ad5",
+      "weightspaceprogramming-0.1.0/src/weightspaceprogramming/core.py": "e24892287da928a0ff5bf10a48de927b3c7f64f8179069c306b81c80fdd3c6ad",
+      "weightspaceprogramming-0.1.0/src/weightspaceprogramming/inspection.py": "925455117696e1621cf80686dcccf1a542cf7ca9c0e1dc87595968ac2598c330",
+      "weightspaceprogramming-0.1.0/src/weightspaceprogramming/lessons.json": "5adf34196c677afc47f470858ffcb96e20c6e16f3148e698443df491ed42b0e4",
+      "weightspaceprogramming-0.1.0/src/weightspaceprogramming/lessons.py": "736be9378cb7bc9855b44269beaa7d9954b0d60c19bb568fa65fdad9dfaf5ef2",
+      "weightspaceprogramming-0.1.0/tests/test_toolkit.py": "19a2bc07bd5e143932144c5108131bdbd106d51b4b15d5563d02fdab9cb899dd"
     }
   }
 }

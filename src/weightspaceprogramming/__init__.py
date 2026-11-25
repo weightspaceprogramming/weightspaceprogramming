@@ -4,7 +4,7 @@ from .core import (LinearWeightGenerator, apply_lora, binary_inputs, compile_aff
 from .inspection import channel_norms, load_arrays, plot_channel_norms
 from .lessons import lesson_names, lesson_source
 
-__version__ = "0.1.0.dev1"
+__version__ = "0.1.0"
 __all__ = ["LinearWeightGenerator", "apply_lora", "binary_inputs", "compile_affine",
            "fit_linear_generator", "mlp", "neuron", "permute_hidden", "channel_norms",
            "load_arrays", "plot_channel_norms", "lesson_names", "lesson_source"]

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "weightspaceprogramming"
-version = "0.1.0.dev1"
+version = "0.1.0"
 description = "Learn weight-space programming with runnable NumPy experiments."
 readme = "README.md"
 requires-python = ">=3.10"
@@ -13,7 +13,6 @@ license = "Apache-2.0"
 license-files = ["LICENSE", "SOURCES.md"]
 keywords = ["weight-space-programming", "neural-networks", "education", "lora", "numpy"]
 classifiers = [
-  "Development Status :: 2 - Pre-Alpha",
   "Intended Audience :: Education",
   "Intended Audience :: Science/Research",
   "Programming Language :: Python :: 3",

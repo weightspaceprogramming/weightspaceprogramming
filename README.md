@@ -2,6 +2,8 @@
 
 Learn weight-space programming by changing small networks and seeing what they compute. Run seven NumPy lessons, inspect NPZ weights, generate channel heatmaps, and check that a consistent hidden-unit permutation preserves a network's output.
 
+[Interactive guide](https://weightspaceprogramming.tech/learn/) · [PyPI](https://pypi.org/project/weightspaceprogramming/) · [Examples](https://github.com/weightspaceprogramming/examples)
+
 ## Install
 
 ```bash
